@@ -1,0 +1,59 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 200%;
+    width: 400px;
+    margin-bottom: 5%;
+}
+span{
+    margin-left: 30%;
+}
+.grid-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 5%;
+}
+.grid-texts{
+    border-radius: 6px;
+    border: 1px solid rgb(209, 207, 207);
+}
+.grid-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    font-weight: 700;
+    font-size: 200%;
+}
+.grid-story{
+    font-size: 150%;
+    width: 65%;
+    padding-left: 18%;
+}
+img{border-radius: 4px;}
+.electrician{
+    width: 80%;
+    height: 80%;
+    margin-top: 20%;
+    margin-left: 8%;
+}
+.images-py img{
+    width: 100%;
+    height: 30%;
+    margin-right: 0;
+    overflow: hidden;
+}
+.images-py{
+
+    margin-top: 15%;
+    padding-left: 5%;
+}
+.html-css{
+    width: 100%;
+    height: 70%;
+    margin-top: 40%;
+}

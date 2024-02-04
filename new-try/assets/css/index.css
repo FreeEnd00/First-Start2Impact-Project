@@ -1,0 +1,14 @@
+p{
+    font-family: "Chakra Petch";
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    color: lightblue;
+}
+a:active{
+    opacity: 0.5;
+    transition: 0.15s;
+}
