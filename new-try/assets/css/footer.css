@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 0; right: 0; left: 0;
+    justify-content: center;
+}
+footer p{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}

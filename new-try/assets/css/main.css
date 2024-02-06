@@ -5,18 +5,21 @@ main{
     align-items: center;
 }
 .title{
-    font-size: 200%;
-    width: 400px;
-    margin-bottom: 5%;
+    font-size: 2rem;
+    width: 26rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding-left: 4rem;
 }
 span{
-    margin-left: 30%;
+    margin-left: 7rem;
 }
 .grid-container{
-    width: 80%;
+    width: 60rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    column-gap: 5%;
+    column-gap: 5rem;
+    margin-bottom: 4rem;
 }
 .grid-texts{
     border-radius: 6px;
@@ -27,7 +30,7 @@ span{
     justify-content: center;
     margin-bottom: 10%;
     font-weight: 700;
-    font-size: 200%;
+    font-size: 2rem;
 }
 .grid-story{
     font-size: 150%;
@@ -42,10 +45,9 @@ img{border-radius: 4px;}
     margin-left: 8%;
 }
 .images-py img{
-    width: 100%;
+    width: 20rem;
     height: 30%;
     margin-right: 0;
-    overflow: hidden;
 }
 .images-py{
 
@@ -53,7 +55,6 @@ img{border-radius: 4px;}
     padding-left: 5%;
 }
 .html-css{
-    width: 100%;
-    height: 70%;
-    margin-top: 40%;
+    width:34rem;
+    margin-top: 15rem;
 }

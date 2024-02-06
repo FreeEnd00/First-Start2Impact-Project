@@ -1,3 +1,6 @@
+body{
+    position: relative;
+}
 p{
     font-family: "Chakra Petch";
 }
