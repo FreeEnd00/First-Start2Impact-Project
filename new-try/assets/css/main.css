@@ -19,7 +19,7 @@ span{
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 .grid-texts{
     border-radius: 6px;
