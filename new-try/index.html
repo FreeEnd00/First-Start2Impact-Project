@@ -89,15 +89,26 @@
         </div>
     </main>
     <footer>
-        <form class="contact-form" popover id="contact-form">
-            <label for="first-name">First Name:</label>
-            <input type="text" name="first-name" id="first-name" placeholder="Thomas">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="thomas.ginder00@gmail.com">
-            <label for="phone-number">Phone Number:</label>
-            <input type="number" name="phone-number" id="phone-number" placeholder="+39 377 174 9747">
-        </form>
-        <button class="contact" popovertarget="contact-form">Contact me &#9660;</button>
+        <button class="form-button" popovertarget="contact-form">Contact me!</button>
+        <div class="form-container" popover id="contact-form">
+            <div class="overlay">
+                <form class="contact-form">
+                    <button class="close-form">X</button>
+                    <div class="first-name-container">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Thomas">
+                    </div>
+                    <div class="email-container">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="thomas.ginder00@gmail.com">
+                    </div>
+                    <div class="phone-number-container">
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="number" name="phone-number" id="phone-number" placeholder="+39 377 174 9747">
+                    </div>
+                </form>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
