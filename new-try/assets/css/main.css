@@ -62,11 +62,15 @@ img{border-radius: 4px;}
     width:34rem;
     margin-top: 15rem;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 649px){
     .grid-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .electrician{
         margin-right: 2rem;
@@ -81,5 +85,32 @@ img{border-radius: 4px;}
     .html-css{
         width: 25rem;
         margin-top: 3rem;
+    }
+}
+@media only screen and (min-width:650px)and (max-width:900px){
+    .grid-container{
+        column-gap: 1rem;
+    }
+    .grid-texts{
+        width: 23rem;
+        margin-right: 1rem;
+    }
+    .electrician{
+        width: 15rem;
+        height: 34rem;
+        margin-left: 0;
+    }
+    .images-py{
+        align-items: center;
+        justify-content: center;
+        margin-left: 2rem;
+
+    }
+    .images-py img{
+        width: 12rem;
+        height: 10rem;
+    }
+    .html-css{
+        width: 15rem;
     }
 }
