@@ -1,5 +1,6 @@
 
 main{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,46 +16,70 @@ span{
     margin-left: 7rem;
 }
 .grid-container{
-    width: 60rem;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     column-gap: 5rem;
     margin-bottom: 3rem;
 }
 .grid-texts{
     border-radius: 6px;
     border: 1px solid rgb(209, 207, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .grid-title{
     display: flex;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 1rem;
     font-weight: 700;
     font-size: 2rem;
 }
 .grid-story{
-    font-size: 150%;
-    width: 65%;
-    padding-left: 18%;
+    font-size: 1.6rem;
+    width: 20rem;
 }
 img{border-radius: 4px;}
 .electrician{
-    width: 80%;
-    height: 80%;
-    margin-top: 20%;
-    margin-left: 8%;
+    width: 25rem;
+    height: 45rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
 }
 .images-py img{
-    width: 20rem;
-    height: 30%;
+    width: 22rem;
+    height: 14rem;
     margin-right: 0;
+    margin-left: rem;
 }
 .images-py{
-
-    margin-top: 15%;
-    padding-left: 5%;
+    margin-top: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
 }
 .html-css{
     width:34rem;
     margin-top: 15rem;
+}
+@media only screen and (max-width: 600px){
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .electrician{
+        margin-right: 2rem;
+    }
+    .images-py img{
+        margin-left: 0;
+    }
+    .images-py{
+        margin-right: 3rem;
+        width: 22rem;
+    }
+    .html-css{
+        width: 25rem;
+        margin-top: 3rem;
+    }
 }
