@@ -1,0 +1,60 @@
+main{
+    font-family: "Protest Strike", sans-serif;
+}
+.full-name{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+.full-name p{
+    margin: 0;
+    font-size: 5.9rem;
+    font-weight: 900;
+}
+.name-container{
+    margin-bottom: 1rem;
+    margin-right: 9rem;
+}
+.name{
+    background-image: url(../images/italia.jpg);
+    background-repeat: repeat;
+    background-size: 360px;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.second-name{
+    background-image: url(../images/sardinia.jpg);
+    background-repeat: repeat;
+    background-size: 130px;
+    background-position: 4px;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.surname-container{
+    margin-bottom: 1rem;
+    margin-left: 10rem;
+}
+.surname{
+    background-image: url(../images/german.jpg);
+    background-repeat: repeat;
+    background-size: 120px;
+    background-position: 1px;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.kinder-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.kinder{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.kinder-container img{
+    width: 20rem;
+}
