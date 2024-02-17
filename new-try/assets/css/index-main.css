@@ -1,7 +1,10 @@
-main{
-    font-family: "Protest Strike", sans-serif;
+body{
     background-image: url(../images/space.jpg);
     background-size: 50rem;
+}
+main{
+    font-family: "Protest Strike", sans-serif;
+
 }
 .full-name{
     display: flex;
@@ -61,4 +64,52 @@ main{
 .kinder-container img{
     width: 20rem;
     background-color: transparent;
+}
+@media only screen and (min-width:600px) and (max-width:1200px){
+    .full-name{
+        padding-top: 3rem;
+    }
+    .full-name p{
+        font-size: 8rem;
+    }
+    .name{
+        background-size: 420px;
+    }
+    .second-name{
+        background-size: 150px;
+    }
+    .surname{
+        background-size: 160px;
+    }
+    .kinder{
+        font-size: 2.8rem;
+        margin-top: 0;
+    }
+}
+@media only screen and (min-width:1201px){
+    .full-name{
+        padding-top: 3rem;
+    }
+    .full-name p{
+        font-size: 7rem;
+    }
+    .name{
+        background-size: 420px;
+    }
+    .second-name{
+        background-size: 150px;
+    }
+    .surname{
+        background-size: 160px;
+    }
+    .kinder{
+        font-size: 2.8rem;
+        margin-top: 0;
+    }
+    .name-container{
+        margin-right: 30rem;
+    }
+    .surname-container{
+        margin-left: 30rem;
+    }
 }

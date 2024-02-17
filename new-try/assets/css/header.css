@@ -9,6 +9,7 @@ header{
     align-items:center;
     padding-left: 0.8rem; padding-right: 0.8rem;
     padding-bottom: 1px;
+    z-index: 1000;
 }
 header p{
     font-size: 1.3rem;
@@ -31,5 +32,12 @@ header a:active{
 @media only screen and (max-width: 600px){
     header p{
         font-size: 0.8rem;
+    }
+    .social img{
+        width: 1rem;
+    }
+    header{
+        justify-content: space-around;
+        padding-left: 0;
     }
 }

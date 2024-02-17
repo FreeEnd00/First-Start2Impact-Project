@@ -1,16 +1,11 @@
 
-body{
+body, html{
     font-family: "Chakra Petch";
-    width: 100%;
-    min-height: 100%;
-    margin: 0;
-}
-html {
+    min-height: 100vh;
     position: relative;
     margin: 0;
-    min-height: 100%;
-    width: 100%;
- }
+	padding: 0;
+}
 a{
     text-decoration: none;
     color: blue;
