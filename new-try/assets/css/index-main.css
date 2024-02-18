@@ -6,6 +6,12 @@ main{
     font-family: "Protest Strike", sans-serif;
 
 }
+.home-container{
+    background-color: rgba(0,0,0,0.2);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: solid 7px rgba(0,0,0,0.01);
+}
 .full-name{
     display: flex;
     align-items: center ;

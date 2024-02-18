@@ -5,29 +5,32 @@ header{
     right: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:center;
-    padding-left: 0.8rem; padding-right: 0.8rem;
-    padding-bottom: 1px;
     z-index: 1000;
 }
 header p{
     font-size: 1.3rem;
     font-weight: bold;
-    margin: 0.6rem;
+    margin: 0;
 }
 .social img{
     width: 2rem;
+    margin: 0;
 }
 header a {
     color: black;
     transition: color 0.15s;
+    margin: 0;
 }
 header a:hover{
     color: rgb(68, 66, 66);
 }
 header a:active{
     color: gray;
+}
+.home-container a img{
+    padding-top: 4px;
 }
 @media only screen and (max-width: 600px){
     header p{
