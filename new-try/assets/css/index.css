@@ -1,8 +1,9 @@
-
-body, html{
-    font-family: "Chakra Petch";
-    min-height: 100vh;
+html{
     position: relative;
+}
+body{
+    font-family: "Chakra Petch";
+    min-height: 100vh; 
     margin: 0;
 	padding: 0;
 }
