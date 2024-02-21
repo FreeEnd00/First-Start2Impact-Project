@@ -3,7 +3,7 @@
     border: solid 7px rgba(0,0,0,0.01);
 }
 .biography{
-    margin: 2.1rem;
+    margin: 3rem;
     font-size: 1.3rem; font-family: "EB Garamond", serif;
 
 }
@@ -28,7 +28,6 @@
 ul{
     list-style-type: none;
     padding: 1rem;
-    margin-bottom: 10rem;
     background-color: rgb(14, 11, 11);
     border-radius: 10px;
 }
@@ -114,7 +113,12 @@ button a:hover{
 }
 @media only screen and (min-width:1000px){
     .biography{
-        margin-bottom: 8rem;
+        margin-top: 2rem;
+        margin-bottom: 18rem;
+        font-size: 2.5rem;
+    }
+    .my-photo{
+        width: 20rem;
     }
     li{
         font-size: 3rem;
