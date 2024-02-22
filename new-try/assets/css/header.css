@@ -8,6 +8,7 @@ header{
     justify-content: space-around;
     align-items:center;
     z-index: 1000;
+    box-shadow: 1px 0 15px gray;
 }
 header p{
     font-size: 1.3rem;
@@ -31,12 +32,13 @@ header a:active{
 }
 .home-container a img{
     padding-top: 4px;
+    width: 2rem;
 }
 @media only screen and (max-width: 600px){
     header p{
         font-size: 0.8rem;
     }
-    .social img{
+    .social img, .home-container a img{
         width: 1rem;
     }
     header{
