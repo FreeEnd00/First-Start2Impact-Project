@@ -12,6 +12,7 @@
     border-radius: 15px;
     margin-right: 1rem;
     float: left;
+    margin-top: 0.8rem;
 }
 .like-container{
     display: flex;
@@ -28,7 +29,7 @@
 ul{
     list-style-type: none;
     padding: 1rem;
-    background-color: rgb(14, 11, 11);
+    background-color: rgb(53, 52, 52);
     border-radius: 10px;
 }
 li{

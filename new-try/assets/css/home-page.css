@@ -30,28 +30,26 @@ main{
 .name{
     background-image: url(../images/italia.jpg);
     background-repeat: repeat;
-    background-size: 22.8rem;
-    background-position: -1.5rem;
+    background-size: 20.7rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 .second-name{
-    background-image: url(../images/sardinia.jpg);
-    background-repeat: repeat;
-    background-size: 5rem;
-    background-position: 0.01rem;
+    background-image: url(../images/sardinia-flag.png);
+    background-position-y: 0.8rem;
+    background-size: 10.8rem;
+    background-position: -2.2rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
-.surname-container{
+.lastname-container{
     margin-bottom: 1rem;
     margin-left: 10rem;
 }
-.surname{
+.lastname{
     background-image: url(../images/german.jpg);
     background-repeat: repeat;
-    background-size: 10rem;
-    background-position: 1rem;
+    background-size: 11.5rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
@@ -73,6 +71,7 @@ main{
 }
 .bg-mention{
     margin-bottom: 2rem;
+    display: flex;
 }
 .bg-mention a{
     color: rgb(175, 175, 233);
@@ -92,13 +91,15 @@ main{
         font-size: 8rem;
     }
     .name{
-        background-size: 29.5rem;
+        background-size: 28rem;
     }
     .second-name{
-        background-size: 150px;
+        background-size: 19rem;
+        background-position: -0.3rem;
     }
-    .surname{
-        background-size: 160px;
+    .lastname{
+        background-size: 11.5rem;
+        background-position-y: 1rem;
     }
     .kinder{
         font-size: 2.8rem;
@@ -113,13 +114,13 @@ main{
         font-size: 7rem;
     }
     .name{
-        background-size: 420px;
+        background-size:24.5rem;
     }
     .second-name{
-        background-size: 150px;
+        background-size: 16rem;
     }
-    .surname{
-        background-size: 160px;
+    .lastname{
+        background-size: 11rem;
     }
     .kinder{
         font-size: 2.8rem;
@@ -128,7 +129,7 @@ main{
     .name-container{
         margin-right: 30rem;
     }
-    .surname-container{
+    .lastname-container{
         margin-left: 30rem;
     }
 }
