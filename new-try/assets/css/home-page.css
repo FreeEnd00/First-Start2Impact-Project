@@ -30,15 +30,16 @@ main{
 .name{
     background-image: url(../images/italia.jpg);
     background-repeat: repeat;
-    background-size: 360px;
+    background-size: 22.8rem;
+    background-position: -1.5rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 .second-name{
     background-image: url(../images/sardinia.jpg);
     background-repeat: repeat;
-    background-size: 130px;
-    background-position: 4px;
+    background-size: 5rem;
+    background-position: 0.01rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
@@ -49,8 +50,8 @@ main{
 .surname{
     background-image: url(../images/german.jpg);
     background-repeat: repeat;
-    background-size: 120px;
-    background-position: 1px;
+    background-size: 10rem;
+    background-position: 1rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
@@ -91,7 +92,7 @@ main{
         font-size: 8rem;
     }
     .name{
-        background-size: 420px;
+        background-size: 29.5rem;
     }
     .second-name{
         background-size: 150px;
