@@ -35,9 +35,9 @@ main{
    -webkit-text-fill-color: transparent;
 }
 .second-name{
-    background-image: url(../images/sardinia-flag.png);
-    background-position-y: 0.8rem;
-    background-size: 10.8rem;
+    background-image: url(../images/sadinia.png);
+    background-position-y: 0.5rem;
+    background-size: 8rem;
     background-position: -2.2rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -94,8 +94,9 @@ main{
         background-size: 28rem;
     }
     .second-name{
-        background-size: 19rem;
-        background-position: -0.3rem;
+        background-size: 9rem;
+        background-position-x: -1rem;
+        background-position-y: 2rem;
     }
     .lastname{
         background-size: 11.5rem;
@@ -117,10 +118,13 @@ main{
         background-size:24.5rem;
     }
     .second-name{
-        background-size: 16rem;
+        background-size: 9rem;
+        background-position-x: 1.5rem;
+        background-position-y: 1.5rem;
     }
     .lastname{
         background-size: 11rem;
+        background-position-y: 0.55rem;
     }
     .kinder{
         font-size: 2.8rem;
