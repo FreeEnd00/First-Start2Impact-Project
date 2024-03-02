@@ -1,0 +1,60 @@
+html{
+    position: relative;
+}
+body{
+    font-family: "Chakra Petch";
+    min-height: 100vh; 
+    margin: 0;
+	padding: 0;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    color: lightblue;
+}
+a:active{
+    opacity: 0.5;
+    transition: 0.15s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+@font-face {
+    font-family: "Climate-Crisis";
+    src: url(../fonts/ClimateCrisis-2040.otf);
+}
+@font-face {
+    font-family: "Dogs";
+    src: url(../fonts/PawWowBlock-VGMDl.otf);
+}
+@font-face {
+    font-family: "Gaming";
+    src: url(../fonts/ARCADECLASSIC.TTF);
+}
+@font-face {
+    font-family: "BoardGames";
+    src: url(../fonts/vinque\ rg.otf);
+}
+@font-face {
+    font-family: "Music";
+    src: url(../fonts/Hipstravaganza-Regular.otf);
+}
+@font-face {
+    font-family: "Wing-Chun";
+    src: url(../fonts/SEVEMFBR.TTF);
+}
+@font-face {
+    font-family: "Eating";
+    src: url(../fonts/PWYummyDonuts.ttf);
+}
+@font-face {
+    font-family: "Space";
+    src: url(../fonts/marspolice_i.ttf);
+}
