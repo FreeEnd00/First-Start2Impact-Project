@@ -1,9 +1,15 @@
 body{
     background-image: url(../images/space.jpg);
-    background-size: 50rem;
+    background-size: 48rem;
+    background-position-x: 41rem;
+    background-position-y: -2rem;
 }
 main{
     font-family: "Protest Strike", sans-serif;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 }
 .home-container{
@@ -16,11 +22,11 @@ main{
     align-items: center ;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10rem;
+    padding-top: 3rem;
 }
-.full-name p{
+.full-name h1{
     margin: 0;
-    font-size: 5.9rem;
+    font-size: 4rem;
     font-weight: 900;
 }
 .name-container{
@@ -30,26 +36,26 @@ main{
 .name{
     background-image: url(../images/italia.jpg);
     background-repeat: repeat;
-    background-size: 20.7rem;
+    background-size: 15rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 .second-name{
     background-image: url(../images/sadinia.png);
     background-position-y: 0.5rem;
-    background-size: 8rem;
-    background-position: -2.2rem;
+    background-size: 5.5rem;
+    background-position: -2rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 .lastname-container{
-    margin-bottom: 1rem;
+    
     margin-left: 10rem;
 }
 .lastname{
     background-image: url(../images/german.jpg);
     background-repeat: repeat;
-    background-size: 11.5rem;
+    background-size: 7.8rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
@@ -58,20 +64,36 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 3rem;
+    
 }
 .kinder{
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     margin-bottom: 0;
+    margin-top: 0;
     color: rgb(243, 232, 232);
 }
 .kinder-container img{
-    width: 20rem;
+    width: 10rem;
     background-color: transparent;
 }
-.bg-mention{
-    margin-bottom: 2rem;
+.skills{
     display: flex;
+    justify-content: space-around;
+    align-items: end;
+    color: rgb(243, 232, 232);
+    font-size: 1rem;
+    font-family: "Chakra Petch";
+}
+.skills h2{
+    margin: 0;
+}
+.skills ul{
+    list-style-type: none;
+    font-weight: 700;
+}
+.bg-mention{
+ position: absolute;
+ bottom: 1.5rem;
 }
 .bg-mention a{
     color: rgb(175, 175, 233);
@@ -87,7 +109,7 @@ main{
     .full-name{
         padding-top: 3rem;
     }
-    .full-name p{
+    .full-name h1{
         font-size: 8rem;
     }
     .name{
@@ -111,11 +133,11 @@ main{
     .full-name{
         padding-top: 3rem;
     }
-    .full-name p{
-        font-size: 7rem;
+    .full-name h1{
+        font-size: 6rem;
     }
     .name{
-        background-size:24.5rem;
+        background-size:21rem;
     }
     .second-name{
         background-size: 9rem;
@@ -123,7 +145,7 @@ main{
         background-position-y: 1.5rem;
     }
     .lastname{
-        background-size: 11rem;
+        background-size: 10rem;
         background-position-y: 0.55rem;
     }
     .kinder{
