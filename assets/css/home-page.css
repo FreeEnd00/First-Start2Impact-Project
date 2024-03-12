@@ -1,8 +1,8 @@
 body{
     background-image: url(../images/space.jpg);
     background-size: 48rem;
-    background-position-x: 41rem;
-    background-position-y: -2rem;
+    background-position-x: 40rem;
+    background-position-y: -9rem;
 }
 main{
     font-family: "Protest Strike", sans-serif;
@@ -10,12 +10,12 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
-.home-container{
-    background-color: rgba(0,0,0,0.2);
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+header:hover{
+    .home-container{
+        background-color: rgba(0,0,0,0.2);
+    }
+    
 }
 .full-name{
     display: flex;
@@ -79,21 +79,22 @@ main{
 .skills{
     display: flex;
     justify-content: space-around;
-    align-items: end;
-    color: rgb(243, 232, 232);
-    font-size: 1rem;
+    color: rgb(255, 255, 254);
+    font-size: 1.2rem;
+    font-weight: 700;
     font-family: "Chakra Petch";
+    margin-bottom: 2rem;
 }
 .skills h2{
     margin: 0;
 }
 .skills ul{
     list-style-type: none;
-    font-weight: 700;
 }
 .bg-mention{
  position: absolute;
  bottom: 1.5rem;
+ left: 4.3rem;
 }
 .bg-mention a{
     color: rgb(175, 175, 233);
@@ -104,6 +105,11 @@ main{
 }
 .bg-mention a:active{
     opacity: 0.4;
+}
+@media only screen and (min-width:801px){
+    .home-container{
+        background-color: rgba(0,0,0,0.2);
+    }
 }
 @media only screen and (min-width:600px) and (max-width:1200px){
     .full-name{

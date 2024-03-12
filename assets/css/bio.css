@@ -1,7 +1,10 @@
-.about-me-container{
-    background-color: rgba(0,0,0,0.2);
-    border: solid 7px rgba(0,0,0,0.01);
+header:hover{
+    .about-me-container{
+        background-color: rgba(0,0,0,0.2);
+        border: solid  rgba(0,0,0,0.01);
+    }
 }
+
 .biography{
     margin: 3rem;
     font-size: 1.3rem; font-family: "EB Garamond", serif;
@@ -98,7 +101,11 @@ button a:hover{
     color: gray;
 }
 
-@media only screen and (min-width:700px){
+@media only screen and (min-width:801px){
+    .about-me-container{
+        background-color: rgba(0,0,0,0.2);
+        border: solid 7px rgba(0,0,0,0.01);
+    }
     .like-container{
         align-items: center;
     }

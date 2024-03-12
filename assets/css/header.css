@@ -34,15 +34,82 @@ header a:active{
     padding-top: 4px;
     width: 2rem;
 }
-@media only screen and (max-width: 600px){
-    header p{
-        font-size: 0.8rem;
+.hamburger-menu {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+@media only screen and (max-width: 800px){
+    .hamburger-menu{
+        opacity: 1;
+        display: flex;
+        justify-content: start;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px;
+        cursor: pointer;
     }
     .social img, .home-container a img{
-        width: 1rem;
+        width: 2rem;
+        margin: 0.2rem;
+        opacity: 0;
+    }
+    .social img{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
     }
     header{
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        right: 18rem;
         padding-left: 0;
+        background-color: transparent;
+        box-shadow: none;
+        transition: all 0.5s;
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        
+    }
+    header:hover{
+        background-color: white;
+        box-shadow: 1px 0 15px gray;
+         p ,.social img, .home-container a img{
+            opacity: 1;    
+        }
+        .hamburger-menu{
+            opacity: 0;
+        }
+    }
+    header p{
+        padding-top: 1.5rem;
+        font-size: 90%;
+        margin-bottom: 2rem;
+        opacity: 0;
+    }
+    .journey-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border: none;
+    }
+    .about-me-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
