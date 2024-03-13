@@ -1,4 +1,7 @@
-
+.journey-container{
+    background-color:rgba(0,0,0,0.2);
+    border: solid 7px rgba(0,0,0,0.01);
+}
 
 main{
     display: flex;
@@ -67,6 +70,9 @@ img{border-radius: 4px;}
     margin-top: 15rem;
 }
 @media only screen and (max-width:801px){
+    .journey-container{
+        background-color: transparent;
+    }
     header:hover{
         .journey-container{
             background-color:rgba(0,0,0,0.2);

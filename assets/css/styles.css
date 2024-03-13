@@ -2,7 +2,7 @@ html{
     position: relative;
 }
 body{
-    font-family: "Chakra Petch";
+    font-family: "Chakra Petch", sans-serif;
     min-height: 100vh; 
     margin: 0;
 	padding: 0;
@@ -22,9 +22,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
     margin: 0;
-}
-input[type=number]{
-    -moz-appearance: textfield;
 }
 @font-face {
     font-family: "Climate-Crisis";

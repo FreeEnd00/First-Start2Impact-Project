@@ -57,13 +57,13 @@ footer{
     font-size: 1.4rem;
     margin-left: 0.3rem;
 }
-.contact-form div input{
+.contact-form div input, textarea{
     width: 60%;
     border: none;
     border-radius: 5px;
     padding-left: 0.5rem;
 }
-.contact-form div input:placeholder{
+.contact-form div input:placeholder, textarea:placeholder{
     font-family: "Chakra Petch";
     font-weight: 600;
     padding-left: 0.5rem;
@@ -78,10 +78,32 @@ footer{
     font-size: 15px;
     cursor: pointer;
 }
+.send {
+    border: none;
+    padding: 1rem 1rem;
+    width: 20%;
+    margin-left: 12rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-family: "Chakra Petch", sans-serif;
+    background-color: rgb(11, 100, 218);
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.15ms;
+}
+.send:hover{
+    opacity: 0.8;
+}
+.send:active{
+    opacity: 0.6;
+}
 @media only screen and (max-width:600px){
     .contact-form{
         width: 15rem;
-        height: 19rem;
+        height: 20rem;
     }
     .contact-form div{
         flex-direction: column;
@@ -92,5 +114,13 @@ footer{
     }
     .form-button{
         font-size: 1rem;
+    }
+    .send{
+        position: fixed;
+        width: 15%;
+        font-size: 1rem;
+        bottom: 4rem;
+        left: 1rem;
+
     }
 }
