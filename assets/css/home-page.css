@@ -78,7 +78,7 @@ header:hover{
 }
 .skills{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: rgb(255, 255, 254);
     font-size: 1.2rem;
     font-weight: 700;
@@ -89,7 +89,7 @@ header:hover{
     margin: 0;
 }
 .skills ul{
-    list-style-type: none;
+    list-style-type: square; 
 }
 .bg-mention{
  position: absolute;

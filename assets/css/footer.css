@@ -78,10 +78,11 @@ footer{
     font-size: 15px;
     cursor: pointer;
 }
+
 .send {
+    width: 6rem;
     border: none;
-    padding: 1rem 1rem;
-    width: 20%;
+    padding: 0.5rem 1rem;
     margin-left: 12rem;
     margin-bottom: 1rem;
     border-radius: 4px;
@@ -116,11 +117,11 @@ footer{
         font-size: 1rem;
     }
     .send{
-        position: fixed;
-        width: 15%;
+        position: absolute;
+        width: 5rem;
         font-size: 1rem;
-        bottom: 4rem;
-        left: 1rem;
+        bottom: -4rem;
+        left: -7rem;
 
     }
 }

@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-      emailjs.init({
-        publicKey: "nBQh49g0WBQPiLN58",
-      });
-     })();
-    </script>
-    <script src="../assets/js/email.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
@@ -27,10 +16,10 @@
     <title>About me</title>
 </head>
 <body>
+    <div class="hamburger-menu">
+        <img src="../assets/icons/hamburger-menu.svg" alt="hamburger-menu">
+    </div>
     <header>
-        <div class="hamburger-menu">
-            <img src="../assets/icons/hamburger-menu.svg" alt="hamburger-menu">
-        </div>
         <div class="home-container">
             <a href="../">
                 <img src="../assets/icons/home.svg" alt="home">
@@ -82,21 +71,24 @@
         <button class="form-button" popovertarget="contact-form">Contact me!</button>
         <div class="form-container" popover id="contact-form">
             <div class="overlay">
-                <form class="contact-form">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="3f37e47b-4de8-40a5-89a6-174d0c4d1606">
                     <button class="close-form"><a>X</a></button>
                     <div class="name-container">
                         <label for="name">Your Name:</label>
-                        <input type="text" id="name" placeholder="Enter Your Name:" required>
+                        <input name="name" type="text" id="name" placeholder="Enter Your Name:" required>
                     </div>
                     <div class="email-container">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Enter Your Email:" required>
+                        <input name="email" type="email" id="email" placeholder="Enter Your Email:" required>
                     </div>
                     <div class="message-container">
                         <label for="message">Message:</label>
-                        <textarea rows="3" id="message" placeholder="Enter Your Messege:" required></textarea>
+                        <textarea name="message" rows="3" id="message" placeholder="Enter Your Messege:" required></textarea>
+                       
                     </div>
-                    <button class="send" onclick="sendMail()">SEND</button>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">         
+                    <input name="send-button" class="send" type="submit" value="Send">
                 </form>
             </div>
         </div>
