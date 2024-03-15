@@ -7,12 +7,14 @@ header:hover{
 
 .biography{
     margin: 3rem;
-    font-size: 1.3rem; font-family: "EB Garamond", serif;
+    font-size: 1rem; font-family: "EB Garamond", serif;
 
 }
 .my-photo{
-    width: 15rem;
+    width: 8rem;
     border-radius: 15px;
+    margin: 0.8rem 1rem 1rem 2rem;
+    margin-left: 2rem;
     margin-right: 1rem;
     float: left;
     margin-top: 0.8rem;
@@ -101,6 +103,7 @@ button a:hover{
     color: gray;
 }
 
+
 @media only screen and (min-width:801px){
     .about-me-container{
         background-color: rgba(0,0,0,0.2);
@@ -111,6 +114,7 @@ button a:hover{
     }
     .biography{
         font-size: 1.8rem;
+        width: 100%;
     }
     li{
         font-size: 2.2rem;
