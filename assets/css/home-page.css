@@ -134,6 +134,9 @@ header:hover{
         font-size: 2.8rem;
         margin-top: 0;
     }
+    .skills{
+        justify-content: center;
+    }
 }
 @media only screen and (min-width:1201px){
     .full-name{
@@ -163,5 +166,8 @@ header:hover{
     }
     .lastname-container{
         margin-left: 30rem;
+    }
+    .skills{
+        justify-content: center;
     }
 }
