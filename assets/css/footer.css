@@ -78,6 +78,9 @@ footer{
     font-size: 15px;
     cursor: pointer;
 }
+.close-form a {
+    color: black;
+}
 
 .send {
     width: 6rem;
