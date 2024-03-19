@@ -4,11 +4,16 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
     z-index: 1000;
     box-shadow: 1px 0 15px gray;
+}
+.hamburger{
+    display: none;
+}
+.hamburger-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 header p{
     font-size: 1.3rem;
@@ -34,48 +39,18 @@ header a:active{
     padding-top: 4px;
     width: 2rem;
 }
-.hamburger-menu {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-}
 @media only screen and (max-width: 800px){
+    .hamburger{
+        display: initial;
+        width: 2rem;
+    }
     .hamburger-menu{
-        display: flex;
         justify-content: start;
         background-color: rgb(236, 233, 233);
         border-radius: 50px;
         cursor: pointer;
         padding: 5px;
-    }
-    
-    .hamburger-menu:hover{
-        .hamburger{
-            opacity: 0;
-        }
-        header{
-            display: flex;
-        }
-    }
-    .social img, .home-container a img{
         width: 2rem;
-        margin: 0.2rem;
-    }
-    .social img{
-        display: flex;
-        flex-direction: column;
-    }
-    .home-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
     }
     header{
         width: 12rem;
@@ -85,26 +60,57 @@ header a:active{
         right: 18rem;
         padding-left: 0;
         border-radius: 40px;
-        border-top-left-radius: 0;
+        border-top-left-radius: 0;  
+        background-color: transparent; 
+        box-shadow: none;
+    }
+    .social,.journey,.bio,.github, .home-container{
         display: none;
-        
     }
-    header p{
-        padding-top: 1.5rem;
-        font-size: 1.1rem;
-        margin-bottom: 2rem;
-    }
-    .journey-container{
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .hamburger-menu:hover{
+        flex-direction: column;
+        width: 8rem;
+        justify-content: space-around;
         align-items: center;
-        margin: 0;
-        border: none;
-    }
-    .about-me-container{
-        width: 100%;
+        box-shadow: 1px 0 15px gray;
+        border-top-left-radius: 0;
+        .hamburger{
+            display: none;
+        }
+        .home-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            padding: 0;
+            border-radius: 50%;
+        }
+        .social,.journey,.bio,.github{
         display: flex;
-        justify-content: center;
+        margin: 1rem;
+        }
+        .social{
+        flex-direction: column;
+        }
+        .journey,.bio,.github{
+            font-size: 1rem;
+        }
+        .social img, .home-container a img{
+            width: 2rem;
+            margin: 0.2rem;
+        }
+        .journey-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            border: none;
+        }
+        .about-me-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
 }
