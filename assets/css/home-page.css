@@ -22,7 +22,7 @@ header:hover{
     align-items: center ;
     justify-content: center;
     flex-direction: column;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 .full-name h1{
     margin: 0;
@@ -31,7 +31,14 @@ header:hover{
 }
 .name-container{
     margin-bottom: 1rem;
-    margin-right: 9rem;
+    display: flex;
+    align-items: start;
+}
+.name-container img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-left: 1rem;
 }
 .name{
     background-image: url(../images/italia.jpg);
@@ -47,10 +54,7 @@ header:hover{
     background-position: -2rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-}
-.lastname-container{
-    
-    margin-left: 10rem;
+   margin-left: 5rem;
 }
 .lastname{
     background-image: url(../images/german.jpg);
@@ -58,7 +62,9 @@ header:hover{
     background-size: 7.8rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+   margin-left: 10rem;
 }
+
 .kinder-container{
     display: flex;
     align-items: center;
@@ -80,16 +86,18 @@ header:hover{
     display: flex;
     justify-content: space-between;
     color: rgb(255, 255, 254);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     font-family: "Chakra Petch";
     margin-bottom: 2rem;
+    margin-left: 0.5rem;
 }
 .skills h2{
     margin: 0;
 }
 .skills ul{
     list-style-type: square; 
+    padding: 1rem;
 }
 .bg-mention{
  position: absolute;
@@ -111,25 +119,35 @@ header:hover{
         background-color: rgba(0,0,0,0.2);
     }
 }
-@media only screen and (min-width:600px) and (max-width:1200px){
+@media only screen and (min-width:700px) and (max-width:1200px){
     .full-name{
         padding-top: 3rem;
     }
     .full-name h1{
-        font-size: 8rem;
+        font-size: 6rem;
+    }
+    .name-container{
+        align-items: center;
+    }
+    .name-container img{
+        margin-top: 2rem;
+        margin-left: 8rem;
+        width: 8rem;
+        height: 8rem;
     }
     .name{
-        background-size: 28rem;
+        background-size: 22rem;
     }
     .second-name{
-        background-size: 9rem;
-        background-position-x: -1rem;
-        background-position-y: 2rem;
+        background-size: 7rem;
+        background-position-x: -1.5rem;
+        background-position-y: -3.3rem;
     }
     .lastname{
-        background-size: 11.5rem;
+        background-size: 8rem;
         background-position-y: 1rem;
     }
+
     .kinder{
         font-size: 2.8rem;
         margin-top: 0;
@@ -145,6 +163,13 @@ header:hover{
     .full-name h1{
         font-size: 6rem;
     }
+    .name-container{
+        margin: 2rem 0 2rem 30rem;
+    }
+    .name-container img{
+        width: 16rem;
+        height: 16rem;
+    }
     .name{
         background-size:21rem;
     }
@@ -152,10 +177,12 @@ header:hover{
         background-size: 9rem;
         background-position-x: 1.5rem;
         background-position-y: 1.5rem;
+        margin-left: 20rem;
     }
     .lastname{
         background-size: 10rem;
         background-position-y: 0.55rem;
+        margin-left: 40rem;
     }
     .kinder{
         font-size: 2.8rem;

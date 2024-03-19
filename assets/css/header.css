@@ -35,7 +35,6 @@ header a:active{
     width: 2rem;
 }
 .hamburger-menu {
-    opacity: 0;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -47,17 +46,25 @@ header a:active{
 }
 @media only screen and (max-width: 800px){
     .hamburger-menu{
-        opacity: 1;
         display: flex;
         justify-content: start;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(236, 233, 233);
         border-radius: 50px;
         cursor: pointer;
+        padding: 5px;
+    }
+    
+    .hamburger-menu:hover{
+        .hamburger{
+            opacity: 0;
+        }
+        header{
+            display: flex;
+        }
     }
     .social img, .home-container a img{
         width: 2rem;
         margin: 0.2rem;
-        opacity: 0;
     }
     .social img{
         display: flex;
@@ -71,33 +78,21 @@ header a:active{
         padding: 0;
     }
     header{
+        width: 12rem;
         flex-direction: column;
         align-items: center;
         left: 0;
         right: 18rem;
         padding-left: 0;
-        background-color: transparent;
-        box-shadow: none;
-        transition: all 0.5s;
-        border-radius: 4px;
+        border-radius: 40px;
         border-top-left-radius: 0;
+        display: none;
         
-    }
-    header:hover{
-        background-color: white;
-        box-shadow: 1px 0 15px gray;
-         p ,.social img, .home-container a img{
-            opacity: 1;    
-        }
-        .hamburger-menu{
-            opacity: 0;
-        }
     }
     header p{
         padding-top: 1.5rem;
-        font-size: 90%;
+        font-size: 1.1rem;
         margin-bottom: 2rem;
-        opacity: 0;
     }
     .journey-container{
         width: 100%;
