@@ -19,26 +19,24 @@ header:hover{
 }
 .full-name{
     display: flex;
-    align-items: center ;
+    align-items: start;
     justify-content: center;
-    flex-direction: column;
     padding-top: 2rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .full-name h1{
     margin: 0;
     font-size: 2.8rem;
     font-weight: 900;
 }
-.name-container{
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: start;
-}
-.name-container img{
+.full-name img{
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
     
 }
 .name{
@@ -75,7 +73,7 @@ header:hover{
     
 }
 .kinder{
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     margin-bottom: 0;
     margin-top: 0;
     color: rgb(243, 232, 232);
@@ -103,8 +101,9 @@ header:hover{
 }
 .bg-mention{
  position: absolute;
- bottom: 1.5rem;
+ bottom: 1.8rem;
  left: 4.3rem;
+ font-size: 0.7rem;
 }
 .bg-mention a{
     color: rgb(175, 175, 233);
@@ -122,20 +121,20 @@ header:hover{
     }
 }
 @media only screen and (min-width:700px) and (max-width:1200px){
-    .full-name{
-        padding-top: 3rem;
-    }
     .full-name h1{
         font-size: 6rem;
     }
-    .name-container{
+    .full-name{
         align-items: center;
+        justify-content: space-around;
+        padding-top: 3rem;
     }
-    .name-container img{
+    .full-name img{
         margin-top: 2rem;
         margin-left: 8rem;
         width: 8rem;
         height: 8rem;
+        position: inherit;
     }
     .name{
         background-size: 22rem;
@@ -155,39 +154,43 @@ header:hover{
         margin-top: 0;
     }
     .skills{
-        justify-content: center;
+       font-size: 1.6rem;
+       justify-content: space-around;
     }
 }
 @media only screen and (min-width:1201px){
     .full-name{
         padding-top: 3rem;
+        margin: 2rem 0 2rem 1rem;
     }
     .full-name h1{
         font-size: 6rem;
     }
-    .name-container{
-        margin: 2rem 0 2rem 30rem;
-    }
-    .name-container img{
+    .full-name img{
         width: 16rem;
         height: 16rem;
+        z-index: -1;
+        top: 3rem;
     }
     .name{
         background-size:21rem;
     }
     .second-name{
         background-size: 9rem;
-        background-position-x: 1.5rem;
-        background-position-y: 1.5rem;
+        background-position-x: 1.4em;
+        background-position-y: 1rem;
         margin-left: 20rem;
     }
     .lastname{
         background-size: 10rem;
         background-position-y: 0.55rem;
-        margin-left: 40rem;
+        margin-left: 35rem;
+    }
+    .kinder-container img{
+        width: 35rem;
     }
     .kinder{
-        font-size: 2.8rem;
+        font-size: 4rem;
         margin-top: 0;
     }
     .name-container{
@@ -197,6 +200,10 @@ header:hover{
         margin-left: 30rem;
     }
     .skills{
-        justify-content: center;
+        justify-content: space-around;
+        font-size: 3rem;
+    }
+    .bg-mention{
+        margin-bottom: 0.2rem;
     }
 }
