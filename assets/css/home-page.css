@@ -23,10 +23,11 @@ header:hover{
     justify-content: center;
     flex-direction: column;
     padding-top: 2rem;
+    margin-top: 1rem;
 }
 .full-name h1{
     margin: 0;
-    font-size: 4rem;
+    font-size: 2.8rem;
     font-weight: 900;
 }
 .name-container{
@@ -38,31 +39,32 @@ header:hover{
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    margin-left: 1rem;
+    
 }
 .name{
     background-image: url(../images/italia.jpg);
     background-repeat: repeat;
-    background-size: 15rem;
+    background-size: 10rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 .second-name{
     background-image: url(../images/sadinia.png);
     background-position-y: 0.5rem;
-    background-size: 5.5rem;
+    background-size: 3rem;
     background-position: -2rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-   margin-left: 5rem;
+   padding-left: 5rem;
 }
 .lastname{
     background-image: url(../images/german.jpg);
     background-repeat: repeat;
-    background-size: 7.8rem;
+    background-size: 3.9rem;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-   margin-left: 10rem;
+   padding-left: 10rem;
+   background-position-y: 0.4rem;
 }
 
 .kinder-container{
