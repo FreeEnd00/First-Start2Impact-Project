@@ -82,6 +82,35 @@ header:hover{
     width: 10rem;
     background-color: transparent;
 }
+.other-pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.journey-d, .about-me-d{
+    display: none;
+}
+.journey-m, .about-me-m{
+    margin: 0 3rem;
+    width: 8rem;
+    border: 5px black solid;
+}
+.mirror-journey{
+    transform: rotate(30deg);
+}
+.mirror-about-me{
+    transform: rotate(-30deg)
+}
+.mirror-journey h3{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.mirror-about-me h3{
+    display: flex;
+    justify-content:center;
+    color: white;
+}
 .skills{
     display: flex;
     justify-content: space-between;
@@ -118,6 +147,19 @@ header:hover{
 @media only screen and (min-width:801px){
     .home-container{
         background-color: rgba(0,0,0,0.2);
+    }
+    .journey-m,.about-me-m{
+        display: none;
+    }
+    .journey-d,.about-me-d{
+        display: initial;
+        margin: 0rem 4rem;
+        width: 10rem;
+        height: 12rem;
+        border: 5px black solid;
+    }
+    .other-pages{
+        margin-bottom: 1rem;
     }
 }
 @media only screen and (min-width:700px) and (max-width:1200px){
@@ -160,6 +202,16 @@ header:hover{
     }
 }
 @media only screen and (min-width:1201px){
+    .journey-d,.about-me-d{
+        display: initial;
+        margin: 0rem 5.5rem;
+        width: 20rem;
+        height: 25rem;
+        border: 5px black solid;
+    }
+    .other-pages{
+        margin-bottom: 1rem;
+    }
     .full-name{
         padding-top: 3rem;
         margin: 2rem 0 2rem 1rem;

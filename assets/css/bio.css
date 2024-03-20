@@ -51,12 +51,6 @@ ul img{
     margin-right: 0.5rem;
     width: 2rem;
 }
-.mentions{
-    margin-bottom: 2rem;
-}
-.mentions a{
-    font-size: 0.8rem;
-}
 .gaming{
   color: rgb(216, 8, 8);  
   font-family: "Gaming",serif;
@@ -99,7 +93,7 @@ ul img{
     margin: 0;
     z-index: 1001;
     border: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     font-family: "Chakra Petch";
     cursor: pointer;
@@ -156,6 +150,9 @@ button a:hover{
     .dogs{
         font-size: 4rem;
     }
+    .mentions{
+        font-size: 1rem;
+    }
 }
 @media only screen and (min-width:1000px){
     h1{
@@ -189,5 +186,8 @@ button a:hover{
     }
     ul img{
         width: 5rem;
+    }
+    .mentions{
+        font-size: 1rem;
     }
 }
