@@ -11,23 +11,24 @@ header:hover{
 h1{
     display: flex;
     justify-content: space-evenly;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 .biography{
     margin: 2rem 0 0 0;
     font-size: 0.71rem; font-family: "EB Garamond", serif;
-
+}
+.bio-text{
+    font-size: 0.8rem;
 }
 .my-photo{
-    width: 10rem;
+    width: 9rem;
     border-radius: 15px;
     float: left;
-    margin-right: 0.4rem;
+    margin-right: 0.7rem;
+    margin-left: 0.2rem;
 }
 .title{
-    position: absolute;
-    top: 16.4rem;
-    left: 6.1rem;
+    
     justify-content: center;
     margin: 0;
     padding-left: 4rem;
@@ -38,11 +39,13 @@ ul{
     list-style-type: none;
     background-color: rgb(53, 52, 52);
     border-radius: 10px;
+    padding: 0;
 }
 li{
     margin-bottom: 1.6rem;
     font-size: 1.8rem;
     font-weight: 700;
+    margin-left: 0.3rem;
 }
 ul img{
     margin-right: 0.5rem;
@@ -51,9 +54,13 @@ ul img{
 .mentions{
     margin-bottom: 2rem;
 }
+.mentions a{
+    font-size: 0.8rem;
+}
 .gaming{
   color: rgb(216, 8, 8);  
   font-family: "Gaming",serif;
+  margin-top: 1.6rem;
 }
 .board{
     color: rgb(214, 73, 31);
@@ -80,6 +87,7 @@ ul img{
 .climate{
     color: rgb(36, 167, 36);
     font-family: "Climate-Crisis",serif;
+    font-size: 1.5rem;
 }
 .astronomy{
     color: rgb(43, 5, 94);
@@ -107,9 +115,15 @@ button a:hover{
 
 
 @media only screen and (min-width:801px){
+    header:hover{
+        .about-me-container{
+            border-radius: 0;
+        }
+    }
     .about-me-container{
         background-color: rgba(0,0,0,0.2);
         border: solid 7px rgba(0,0,0,0.01);
+
     }
 }    
 @media only screen and (min-width:600px) and (max-width:999px){
@@ -124,6 +138,9 @@ button a:hover{
     .biography{
         font-size: 1.3rem;
         width: 100%;
+    }
+    .bio-text{
+        font-size: 1.7rem;
     }
     .title{
         top: 25rem;
@@ -157,7 +174,9 @@ button a:hover{
     .biography{
         margin-top: 2.5rem;
         margin-bottom: 10rem;
-        font-size: 2.52rem;
+    }
+    .bio-text{
+        font-size: 4rem;
     }
     .my-photo{
         width: 20rem;
@@ -167,9 +186,6 @@ button a:hover{
     }
     .dogs{
         font-size: 7rem;
-    }
-    ul{
-        padding: 2rem;
     }
     ul img{
         width: 5rem;

@@ -46,11 +46,12 @@ header a:active{
     }
     .hamburger-menu{
         justify-content: start;
-        background-color: rgb(236, 233, 233);
+        background-color:white;
         border-radius: 50px;
         cursor: pointer;
         padding: 5px;
         width: 2rem;
+        margin: 0.3rem;
     }
     header{
         width: 12rem;
@@ -93,7 +94,7 @@ header a:active{
         flex-direction: column;
         }
         .journey,.bio,.github{
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
         .social img, .home-container a img{
             width: 2rem;
