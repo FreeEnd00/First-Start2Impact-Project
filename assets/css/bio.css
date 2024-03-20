@@ -150,6 +150,9 @@ button a:hover{
     .dogs{
         font-size: 4rem;
     }
+    .climate{
+        font-size: 2.4rem;
+    }
     .mentions{
         font-size: 1rem;
     }
@@ -183,6 +186,9 @@ button a:hover{
     }
     .dogs{
         font-size: 7rem;
+    }
+    .climate{
+        font-size: 4rem;
     }
     ul img{
         width: 5rem;
