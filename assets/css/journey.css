@@ -19,6 +19,7 @@ main{
     background-color: transparent;
     border-radius: 0.3rem;
     z-index: -1;
+    
 }
 .bottom-right-corner{
     border-right: 5px black solid;
@@ -105,8 +106,8 @@ img{border-radius: 4px;}
     border-radius: 4px;
     width:34rem;
     height: 37rem;
-    background-image: url(/assets/images/html-css.png);
-    background-position-y: -5rem;
+    background-image: url(/assets/images/html-css.jpg);
+    background-size: 35rem;
     background-position-x: -1rem;
 }
 .third-grid{
@@ -134,11 +135,13 @@ img{border-radius: 4px;}
     .grid-title{
         font-size: 1rem;
     }
+    .grid-texts{
+        width: 16rem;
+    }
     .grid-story{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin: 0.5rem;
         width: 11rem;
-
     }
     .title{
         font-size: 2rem;
@@ -163,8 +166,11 @@ img{border-radius: 4px;}
         font-size: 1rem;
     }
     .electrician{
-        width: 12rem;
-        height: 25rem;
+        width: 16rem;
+        height: 30rem;
+    }
+    .images-py{
+        margin: 0;
     }
     .images-py img{
         width: 16rem;
@@ -254,7 +260,8 @@ img{border-radius: 4px;}
 
     }
     .images-py{
-        width: 22rem;
+        margin: 0;
+        width: 25rem;
     }
     .html-css{
         width: 25rem;
