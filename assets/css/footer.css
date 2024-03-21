@@ -9,7 +9,7 @@ footer{
     bottom: 0; left: 0; right: 0;
     box-shadow: 1px 0 15px gray;
 }
-.form-button{
+.form-button, .back-home{
     text-decoration: underline;
     font-weight: bold;
     font-size: 1.3rem;
@@ -21,111 +21,12 @@ footer{
     z-index: 100;
     transition: opacity 0.15s;
 }
-.form-button:hover{
-    opacity: 0.5;
-}
-.form-button:active{
-    opacity: 0.3;
-}
-.contact-form{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgb(199, 198, 195);
-    border-radius: 10px;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    height: 30rem;
-    width: 30rem;
-}
-.overlay{
-    position: fixed;
-    left: 0;right: 0;bottom: 0;top: 0;
-    background-color: rgba(0,0,0,0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-.contact-form div{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-}
-.contact-form div label{
-    font-size: 1.4rem;
-    margin-left: 0.3rem;
-}
-.contact-form div input, textarea{
-    width: 60%;
-    border: none;
-    border-radius: 5px;
-    padding-left: 0.5rem;
-}
-.contact-form div input:placeholder, textarea:placeholder{
-    font-family: "Chakra Petch";
-    font-weight: 600;
-    padding-left: 0.5rem;
-}
-.close-form{
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    right: 5px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    cursor: pointer;
-}
-.close-form a {
+.form-button a,.back-home a{
     color: black;
 }
-
-.send {
-    width: 6rem;
-    border: none;
-    padding: 0.5rem 1rem;
-    margin-left: 12rem;
-    margin-bottom: 1rem;
-    border-radius: 4px;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 1.3rem;
-    font-family: "Chakra Petch", sans-serif;
-    background-color: rgb(11, 100, 218);
-    color: white;
-    cursor: pointer;
-    transition: opacity 0.15ms;
+.form-button a:hover, .back-home a:hover{
+    opacity: 0.5;
 }
-.send:hover{
-    opacity: 0.8;
-}
-.send:active{
-    opacity: 0.6;
-}
-@media only screen and (max-width:600px){
-    .contact-form{
-        width: 15rem;
-        height: 20rem;
-    }
-    .contact-form div{
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact-form div label{
-        font-size: 1rem;
-    }
-    .form-button{
-        font-size: 1rem;
-    }
-    .send{
-        position: absolute;
-        width: 5rem;
-        font-size: 1rem;
-        bottom: -4rem;
-        left: -7rem;
-
-    }
+.form-button:active, .back-home a:active{
+    opacity: 0.3;
 }
