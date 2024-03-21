@@ -1,4 +1,7 @@
-
+body{
+    background-image: url(../images/pattern-code.jpg);
+    background-position-y: 2rem;
+}
 .journey-container{
     background-color:rgba(0,0,0,0.2);
     border: solid 7px rgba(0,0,0,0.01);
@@ -8,29 +11,67 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(../iamges/pattern-code.jpg);
+}
+.top-left-corner, .bottom-right-corner{
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border-radius: 0.3rem;
+    z-index: -1;
+}
+.bottom-right-corner{
+    border-right: 5px black solid;
+    border-bottom: 5px black solid;
+    transform: translate(13.1rem, -2.9rem);
+}
+.top-left-corner{
+    border-top: 5px black solid;
+    border-left: 5px black solid;
+    transform: translate(-0.3rem, 6rem);
+}
+.box{
+    width: 14rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0;
+}
+strong{
+    background-color: white;
+    width: 60%;
+    padding-left: 0.5rem;
+}
+.coded-title{
+    margin-left: 7rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    transform: translate(0,-0.1rem);
+    
 }
 .title{
-    margin: 2.9rem 0;
+    background-color: transparent;
+    margin-top:3.3rem;
     display: flex;
     flex-direction: column;
 }
 span{
-    margin-left: 7rem;
+    background-color: white;
+    margin: 0;
 }
 .grid-container{
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5rem;
-    margin-bottom: 3rem;
 }
 .grid-texts{
     border-radius: 6px;
-    border: 1px solid rgb(209, 207, 207);
+    border: 1px solid rgb(17, 16, 16);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .grid-title{
+    border-bottom: 1px solid rgb(17, 16, 16);;
     display: flex;
     justify-content: center;
     margin: 1rem 0;
@@ -46,26 +87,33 @@ img{border-radius: 4px;}
 .electrician{
     width: 25rem;
     height: 45rem;
-    margin-top: 4rem;
-    margin-left: 2rem;
 }
 .images-py img{
-    width: 22rem;
-    height: 14rem;
-    margin-right: 0;
-    margin-left: 5.5rem;
+    width: 30rem;
+    height: 18rem;
 }
+.reverse .grid-story{
+    font-size: 1.9rem;
+}
+
 .images-py{
     margin-top: 1.9rem;
     display: flex;
     flex-direction: column;
-    margin-right: 3rem;
 }
 .html-css{
+    border-radius: 4px;
     width:34rem;
-    margin-top: 15rem;
+    height: 37rem;
+    background-image: url(/assets/images/html-css.png);
+    background-position-y: -5rem;
+    background-position-x: -1rem;
+}
+.third-grid{
+    margin-bottom: 1.7rem;
 }
 @media only screen and (max-width:600px){
+
     .journey-container{
         background-color: transparent;
     }
@@ -81,23 +129,26 @@ img{border-radius: 4px;}
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 2rem 0;
 
     }
     .grid-title{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .grid-story{
-        font-size: 1rem;
+        font-size: 0.8rem;
+        margin: 0.5rem;
         width: 11rem;
-        margin: 1rem 2rem;
+
     }
     .title{
-        font-size: 3rem;
+        font-size: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    strong{
+        margin-right: 7rem;
     }
     span{
         margin-left: 0.5rem;
@@ -107,23 +158,23 @@ img{border-radius: 4px;}
         align-items: center;
         justify-content: center;
     }
-    .electrician{
-        width: 14rem;
-        height: 25rem;
-        margin-left: 0;
-        margin-top: 2rem;
+    .reverse .grid-story{
+        margin: 2.5rem;
+        font-size: 1rem;
     }
-    .images-py{
-        margin-right: 0;
+    .electrician{
+        width: 12rem;
+        height: 25rem;
     }
     .images-py img{
         width: 16rem;
-        margin: 0;
         height: 12rem;
     }
+    .third-grid  .grid-texts{
+        width: 16rem;
+    }
     .html-css{
-        margin-top: 5rem;
-        width: 12rem;
+        width: 16rem;
     }
 }
 @media only screen and (min-width:601px) and (max-width: 800px){
@@ -154,6 +205,23 @@ img{border-radius: 4px;}
         align-items: center;
         justify-content: center;
     }
+    .top-left-corner{
+        transform: translate(-0.1rem, 6rem);
+    }
+    .bottom-right-corner{
+        transform: translate(18.7rem, -3.1rem);
+    }
+    strong{
+        margin-right: 9rem;
+    }
+    .box{
+        width: 89%;
+        margin-right: 3rem;
+        transform: translate(0,-0.1rem);
+    }
+    .coded-title{
+        transform: translate(0,-0.3rem);
+    }
     span{
         margin-left: 0.5rem;
     }
@@ -168,7 +236,6 @@ img{border-radius: 4px;}
     .grid-story{
         font-size: 1.3rem;
         width: 15rem;
-        margin-bottom: 0.5rem;
     }
     .grid-texts {
         width: 25rem;
@@ -180,19 +247,18 @@ img{border-radius: 4px;}
     .electrician{
     width: 25rem;
     height: 40rem;
-    margin-left: 0;
     }
     .images-py img{
-        width: 18rem;
+        width: 25rem;
+        margin: 0;
 
     }
     .images-py{
-        margin-right: 5.5rem;
         width: 22rem;
     }
     .html-css{
         width: 25rem;
-        margin-top: 3rem;
+        margin: 0;
     }
     .journey-container{
         border: none;
@@ -200,34 +266,36 @@ img{border-radius: 4px;}
 }
 @media only screen and (min-width:801px) and (max-width:1200px){
     .grid-container{
-        column-gap: 1rem;
+        column-gap: 0;
     }
     .grid-title{
         font-size: 2rem;
     }
     .grid-texts{
         width: 23rem;
-        margin-right: 1rem;
     }
     .grid-story{
         margin-bottom: 1rem;
     }
     .electrician{
-        width: 15rem;
-        height: 34rem;
-        margin-left: 2rem;
+        width: 23rem;
+        height: 41rem;
+
     }
     .images-py{
         align-items: center;
         justify-content: center;
+        margin: 0;
     }
     .images-py img{
-        width: 12rem;
-        height: 10rem;
+        width: 23rem;
+        height: 14rem;
+        margin: 0;
     }
     .html-css{
-        width: 15rem;
-        margin-top: 20rem;
+        width: 23rem;
+        margin:0;
+
     }
     .journey-container{
         border: solid 7px rgba(0,0,0,0.01);
