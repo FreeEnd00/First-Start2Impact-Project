@@ -90,14 +90,13 @@ img{border-radius: 4px;}
 }
 .images-py img{
     width: 30rem;
-    height: 18rem;
+    height: 20rem;
 }
 .reverse .grid-story{
     font-size: 1.9rem;
 }
 
 .images-py{
-    margin-top: 1.9rem;
     display: flex;
     flex-direction: column;
 }
@@ -274,34 +273,24 @@ img{border-radius: 4px;}
     .grid-container{
         column-gap: 0;
     }
+    .grid-container img, .html-css{
+        width: 24rem;
+    }
     .grid-title{
         font-size: 2rem;
-    }
-    .grid-texts{
-        width: 23rem;
     }
     .grid-story{
         margin-bottom: 1rem;
     }
     .electrician{
-        width: 23rem;
         height: 41rem;
-
     }
     .images-py{
         align-items: center;
         justify-content: center;
-        margin: 0;
     }
     .images-py img{
-        width: 23rem;
-        height: 14rem;
-        margin: 0;
-    }
-    .html-css{
-        width: 23rem;
-        margin:0;
-
+        height: 20rem;
     }
     .journey-container{
         border: solid 7px rgba(0,0,0,0.01);

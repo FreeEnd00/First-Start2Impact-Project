@@ -36,7 +36,9 @@ header:hover{
     border-radius: 50%;
     position: absolute;
     top: 0.3rem;
-    right: 3rem;
+    right: 2.7rem;
+    box-shadow: 1px 0 50px rgb(124, 123, 123);
+
     
 }
 .name{
@@ -77,6 +79,7 @@ header:hover{
     margin-bottom: 0;
     margin-top: 0;
     color: rgb(243, 232, 232);
+
 }
 .kinder-container img{
     width: 10rem;
@@ -86,10 +89,15 @@ header:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 3.3rem;
+}
+.kinder, h3, .bg-mention{
+    padding: 0.2rem 0.5rem;
+    border-radius: 30%;
+    box-shadow: 1px 0 15px rgb(53, 52, 52);
+    background-color: black;
 }
 h3{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .journey-d, .about-me-d{
     display: none;
@@ -98,17 +106,18 @@ h3{
     margin: 0 ;
 }
 .about-me-m{
-    margin: 0 4rem 0 4rem;
+    margin: 0;
 }
-.journey-m, .about-me-m{
+.journey-m, .about-me-m, .journey-d,.about-me-d{
     width: 5rem;
     border: 5px black solid;
+    box-shadow: 1px 0 30px rgb(66, 65, 65);
 }
 .mirror-journey{
-    transform: rotate(30deg);
+    transform: rotate(30deg) translate(-2rem,1rem);
 }
 .mirror-about-me{
-    transform: rotate(-30deg)
+    transform: rotate(-30deg) translate(2rem,1rem);
 }
 .mirror-journey h3{
     display: flex;
@@ -124,14 +133,22 @@ h3{
     display: flex;
     justify-content: space-between;
     color: rgb(255, 255, 254);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     font-family: "Chakra Petch";
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     margin-left: 0.5rem;
+    margin-right: 0.2rem;
+}
+.soft-skills, .hard-skills{
+    background-color: rgb(41, 39, 39);
+    padding: 0.5rem ;
+    border-radius: 20%;
+    box-shadow: 1px 0 15px rgb(53, 52, 52);
 }
 .skills h2{
     margin: 0;
+    padding-left: 1rem;
 }
 .skills ul{
     list-style-type: square; 
@@ -142,6 +159,7 @@ h3{
  bottom: 1.8rem;
  left: 4.3rem;
  font-size: 0.7rem;
+ color: white;
 }
 .bg-mention a{
     color: rgb(175, 175, 233);
@@ -160,12 +178,16 @@ h3{
     .journey-m,.about-me-m{
         display: none;
     }
+    .mirror-journey{
+        transform: rotate(30deg) translate(-3.5rem,1rem);
+    }
+    .mirror-about-me{
+        transform: rotate(-30deg) translate(3.5rem,1rem);
+    }
     .journey-d,.about-me-d{
         display: initial;
-        margin: 0rem 4rem;
-        width: 10rem;
-        height: 12rem;
-        border: 5px black solid;
+        width: 14rem;
+        height: 15rem;
     }
     .other-pages{
         margin-bottom: 1rem;
@@ -208,9 +230,13 @@ h3{
         font-size: 3rem;
         margin-top: 0;
     }
+    h3{
+        font-size: 0.8rem;
+    }
     .skills{
-       font-size: 1.6rem;
+       font-size: 1rem;
        justify-content: space-around;
+       margin: 0.5rem 0 4rem 0;
     }
 }
 @media only screen and (min-width:1201px){
@@ -257,20 +283,26 @@ h3{
     }
     .journey-d,.about-me-d{
         display: initial;
-        margin: 0rem 5.5rem;
-        width: 20rem;
-        height: 25rem;
+        width: 13rem;
+        height: 13rem;
         border: 5px black solid;
     }
     .other-pages{
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
     h3{
         font-size: 2rem;
     }
+    .skills h2{
+        padding-left: 2rem;
+    }
     .skills{
         justify-content: space-around;
-        font-size: 3rem;
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    .soft-skills,.hard-skills{
+        padding: 1rem;
     }
     .bg-mention{
         margin-bottom: 0.2rem;
