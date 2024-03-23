@@ -37,7 +37,7 @@ header:hover{
     position: absolute;
     top: 0.8rem;
     right: 1rem;
-    box-shadow: 1px 0 50px rgb(124, 123, 123);
+    box-shadow: 5px 5px 15px ;
 }
 .name{
     background-image: url(../images/italia.jpg);
@@ -91,7 +91,7 @@ header:hover{
 .kinder, h3, .bg-mention{
     padding: 0.2rem 0.5rem;
     border-radius:20%;
-    box-shadow: 1px 0 15px rgb(53, 52, 52);
+    box-shadow: 5px 5px 10px black;
     background-color: black;
 }
 h3{
@@ -109,7 +109,7 @@ h3{
 .journey-m, .about-me-m, .journey-d,.about-me-d{
     width: 5rem;
     border: 5px black solid;
-    box-shadow: 1px 0 30px rgb(66, 65, 65);
+    box-shadow: 5px 5px 10px black;
     border-radius: 10%;
 }
 .mirror-journey{
@@ -141,7 +141,7 @@ h3{
     background-color: rgb(41, 39, 39);
     padding: 0.5rem ;
     border-radius: 20%;
-    box-shadow: 1px 0 15px rgb(53, 52, 52);
+    box-shadow: 5px 5px 10px black;
 }
 .skills h2{
     margin: 0;
@@ -258,7 +258,7 @@ h3{
         background-size: 9rem;
         background-position-x: 1.4em;
         background-position-y: 1rem;
-        margin-left: 20rem;
+        margin-left: 17rem;
     }
     .lastname{
         background-size: 10rem;
@@ -276,7 +276,7 @@ h3{
         margin-right: 30rem;
     }
     .lastname-container{
-        margin-left: 30rem;
+        margin-left: 25rem;
     }
     .journey-d,.about-me-d{
         display: initial;

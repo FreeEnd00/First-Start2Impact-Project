@@ -24,11 +24,13 @@ main{
     border-right: 5px black solid;
     border-bottom: 5px black solid;
     transform: translate(13.1rem, -2.9rem);
+    box-shadow: 10px 10px 10px black;
 }
 .top-left-corner{
     border-top: 5px black solid;
     border-left: 5px black solid;
     transform: translate(-0.3rem, 6rem);
+    box-shadow: -10px -10px 10px ;
 }
 .box{
     width: 14rem;
@@ -40,6 +42,7 @@ strong{
     background-color: white;
     width: 60%;
     padding-left: 0.5rem;
+    opacity: 0.9;
 }
 .coded-title{
     margin-left: 7rem;
@@ -57,11 +60,14 @@ strong{
 span{
     background-color: white;
     margin: 0;
+    opacity: 0.9;
 }
 .grid-container{
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    box-shadow: 15px 15px 10px 
+    
 }
 .grid-texts{
     border-radius: 6px;
@@ -122,6 +128,9 @@ img{border-radius: 4px;}
             border: none;
             border-radius: 50%;
         }
+    }
+    .top-left-corner{
+        transform: translate(-0.75rem,6rem);
     }
     .grid-container{
         display: flex;
@@ -210,7 +219,7 @@ img{border-radius: 4px;}
         justify-content: center;
     }
     .top-left-corner{
-        transform: translate(-0.1rem, 6rem);
+        transform: translate(-0.18rem, 6rem);
     }
     .bottom-right-corner{
         transform: translate(18.7rem, -3.1rem);
