@@ -6,7 +6,7 @@
 html{
     position: relative;
 }
-body{
+body,main{
     font-family: "Chakra Petch", sans-serif;
     min-height: 100vh; 
     margin: 0;
