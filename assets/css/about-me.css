@@ -5,6 +5,8 @@ body{
 main{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 header:hover{
     .about-me-container{
@@ -16,8 +18,9 @@ header:hover{
     justify-content: center;
     display: flex;
 }
-h1, .bio-text, .title-like{
+h1, .bio-text, .title-like, .bg-mention{
     border: 1px gray solid;
+    box-shadow: 5px 10px 15px;
 }
 h1{
     font-size: 0.7rem;
@@ -25,7 +28,6 @@ h1{
     padding: 0.1rem;
     border-radius: 4px;
     margin-top: 3rem;
-    box-shadow: 5px 10px 15px ;
 }
 .biography{
     display: flex;
@@ -42,8 +44,6 @@ h1{
     padding: 0.5rem;
     margin-right: 1rem;
     border-radius: 10px;
-    border: 1px gray solid;
-    box-shadow: 5px 10px 15px ;
 
 }
 .my-photo{
@@ -54,13 +54,13 @@ h1{
     box-shadow: 5px 10px 15px ;
 }
 .bg-mention{
-    font-size: 0.6rem;
-    margin-left: 0.5rem;
+    font-size: 0.4rem;
+    margin: 0.5rem;
     background-color: white;
     border-radius: 4px;
-    border: 1px gray solid;
     display: inline;
     padding: 0.2rem;
+    cursor: pointer;
 
 }
 .title-like{
@@ -71,7 +71,6 @@ h1{
     padding: 0.1rem;
     border-radius: 4px;
     margin-bottom: 0.1rem;
-    box-shadow: 5px 10px 15px ;
 }
 .title-like-container{
     display: flex;
@@ -81,6 +80,7 @@ h1{
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;
+    justify-content: space-between;
 }
 ul{
     list-style-type: none;
@@ -89,7 +89,7 @@ ul{
     padding: 0;
 }
 li{
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
     font-size: 1.8rem;
     font-weight: 700;
     margin-left: 0.3rem;
@@ -181,8 +181,6 @@ button a:hover{
         margin-right: 2rem;
     }
     .title-like{
-        top: 25rem;
-        left: 11.6rem;
         font-size: 1.5rem;
     }
     ul img{
