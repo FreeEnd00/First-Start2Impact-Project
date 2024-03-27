@@ -99,30 +99,24 @@ h3{
 }
 .journey-d, .about-me-d{
     display: none;
+    object-fit: contain;
 }
-.journey-m{
+.journey-m,.about-me-m{
     margin: 0 ;
-}
-.about-me-m{
-    margin: 0;
+    object-fit: contain;
 }
 .journey-m, .about-me-m, .journey-d,.about-me-d{
-    width: 10rem;
+    width: 18rem;
     border: 5px black solid;
     box-shadow: 5px 5px 10px black;
     border-radius: 10%;
 }
-.mirror-journey{
+.mirror-journey, .mirror-about-me{
     margin-bottom: 1rem;
 }
-.mirror-journey h3{
+.mirror-journey h3,.mirror-about-me h3{
     display: flex;
     justify-content: center;
-    color: white;
-}
-.mirror-about-me h3{
-    display: flex;
-    justify-content:center;
     color: white;
 }
 .skills{
@@ -132,7 +126,7 @@ h3{
     font-size: 0.5rem;
     font-weight: 700;
     font-family: "Chakra Petch";
-    margin: 1rem 1rem 4rem 1rem;
+    margin: 1.5rem 1rem 4rem 1rem;
 }
 .soft-skills{
     margin-right: 1rem;
@@ -181,14 +175,16 @@ h3{
     }
     .journey-d,.about-me-d{
         display: initial;
-        width: 18rem;
-        height: 20rem;
+        width: 25rem;
+        height: 31rem;
+        object-fit: fill;
     }
     h3{
         font-size: 1.6rem;
     }
 }
 @media only screen and (min-width:700px) and (max-width:1200px){
+
     .full-name h1{
         font-size: 6rem;
     }
@@ -225,6 +221,11 @@ h3{
     .other-pages{
         flex-direction: row;
         justify-content: space-around;
+    }
+    .journey-m, .about-me-m{
+        width: 17rem;
+        height: 25rem;
+        object-fit: fill;
     }
     h3{
         font-size: 0.8rem;
@@ -279,12 +280,14 @@ h3{
     }
     .other-pages{
         flex-direction: row;
+        justify-content: space-around;
     }
     .journey-d,.about-me-d{
         display: initial;
-        width: 30rem;
+        width: 26rem;
         height: 30rem;
         border: 5px black solid;
+        object-fit: fill;
     }
     .other-pages{
         margin-bottom: 3rem;
