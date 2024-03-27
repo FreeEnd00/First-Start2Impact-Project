@@ -1,0 +1,3 @@
+  branches:
+    gh-pages:
+      source: master

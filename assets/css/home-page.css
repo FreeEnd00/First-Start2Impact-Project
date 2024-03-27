@@ -1,0 +1,312 @@
+body{
+    background-image: url(../images/space.jpg);
+    background-size: 48rem;
+    background-position-x: 40rem;
+    background-position-y: -9rem;
+}
+main{
+    font-family: "Protest Strike", sans-serif; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+header:hover{
+    .home-container{
+        background-color: rgba(0,0,0,0.2);
+    }
+    
+}
+.full-name{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.full-name h1{
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.full-name img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    box-shadow: 5px 5px 15px ;
+}
+.name{
+    background-image: url(../images/italia.jpg);
+    background-repeat: repeat;
+    background-size: 10rem;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.second-name{
+    background-image: url(../images/sadinia.png);
+    background-position-y: 0.5rem;
+    background-size: 3rem;
+    background-position: -2rem;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   padding-left: 5rem;
+}
+.lastname{
+    background-image: url(../images/german.jpg);
+    background-repeat: repeat;
+    background-size: 3.9rem;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   padding-left: 10rem;
+   background-position-y: 0.4rem;
+}
+
+.kinder-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.kinder{
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: rgb(243, 232, 232);
+
+}
+.kinder-container img{
+    width: 10rem;
+    background-color: transparent;
+}
+.other-pages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.kinder, h3, .bg-mention{
+    padding: 0.2rem 0.5rem;
+    border-radius:20%;
+    box-shadow: 5px 5px 10px black;
+    background-color: black;
+}
+h3{
+    font-size: 0.8rem;
+}
+.journey-d, .about-me-d{
+    display: none;
+    object-fit: contain;
+}
+.journey-m,.about-me-m{
+    margin: 0 ;
+    object-fit: contain;
+}
+.journey-m, .about-me-m, .journey-d,.about-me-d{
+    width: 18rem;
+    border: 5px black solid;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10%;
+}
+.mirror-journey, .mirror-about-me{
+    margin-bottom: 1rem;
+}
+.mirror-journey h3,.mirror-about-me h3{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 254);
+    font-size: 0.5rem;
+    font-weight: 700;
+    font-family: "Chakra Petch";
+    margin: 1.5rem 1rem 4rem 1rem;
+}
+.soft-skills{
+    margin-right: 1rem;
+}
+.soft-skills, .hard-skills{
+    background-color: rgb(41, 39, 39);
+    padding: 0.5rem ;
+    border-radius: 20%;
+    box-shadow: 5px 5px 10px black;
+}
+.skills h2{
+    margin: 0;
+    padding-left: 1rem;
+}
+.skills ul{
+    list-style-type: square; 
+    padding: 1rem;
+}
+.bg-mention{
+ position: absolute;
+ bottom: 1.8rem;
+ left: 4.3rem;
+ font-size: 0.4rem;
+ color: white;
+}
+.bg-mention a{
+    color: rgb(175, 175, 233);
+    transition: opacity 0.15s;
+}
+.bg-mention a:hover{
+    opacity: 0.7;
+}
+.bg-mention a:active{
+    opacity: 0.4;
+}
+@media only screen and (min-width:801px){
+    .home-container{
+        background-color: rgba(0,0,0,0.2);
+    }
+    .other-pages{
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
+    .journey-m,.about-me-m{
+        display: none;
+    }
+    .journey-d,.about-me-d{
+        display: initial;
+        width: 25rem;
+        height: 31rem;
+        object-fit: fill;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
+}
+@media only screen and (min-width:700px) and (max-width:1200px){
+
+    .full-name h1{
+        font-size: 6rem;
+    }
+    .full-name{
+        align-items: center;
+        padding-top: 3rem;
+        margin-right: 8rem;
+
+    }
+    .full-name img{
+        top: 3rem;
+        width: 12rem;
+        height: 12rem;
+    }
+    .name{
+        background-size: 22rem;
+    }
+    .second-name{
+        background-size: 7rem;
+        background-position-x: -1.5rem;
+        background-position-y: -3.3rem;
+    }
+    .lastname{
+        background-size: 8rem;
+        background-position-y: 1rem;
+    }
+    .kinder-container img{
+        width: 14rem;
+    }
+    .kinder{
+        font-size: 3rem;
+        margin-top: 0;
+    }
+    .other-pages{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .journey-m, .about-me-m{
+        width: 17rem;
+        height: 25rem;
+        object-fit: fill;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    .skills{
+       font-size: 1rem;
+       justify-content: space-around;
+       margin: 0.5rem 0 4rem 0;
+    }
+}
+@media only screen and (min-width:1201px){
+
+    .full-name{
+        padding-top: 3rem;
+        margin: 2rem 0 2rem 1rem;
+    }
+    .full-name h1{
+        font-size: 6rem;
+    }
+    .full-name img{
+        width: 16rem;
+        height: 16rem;
+        z-index: -1;
+        top: 3rem;
+    }
+    .name{
+        background-size:21rem;
+    }
+    .second-name{
+        background-size: 9rem;
+        background-position-x: 1.4em;
+        background-position-y: 1rem;
+        margin-left: 17rem;
+    }
+    .lastname{
+        background-size: 10rem;
+        background-position-y: 0.55rem;
+        margin-left: 35rem;
+    }
+    .kinder-container img{
+        width: 35rem;
+    }
+    .kinder{
+        font-size: 3rem;
+        margin:1.5rem;
+    }
+    .name-container{
+        margin-right: 30rem;
+    }
+    .lastname-container{
+        margin-left: 25rem;
+    }
+    .other-pages{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .journey-d,.about-me-d{
+        display: initial;
+        width: 26rem;
+        height: 30rem;
+        border: 5px black solid;
+        object-fit: fill;
+    }
+    .other-pages{
+        margin-bottom: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .skills h2{
+        padding-left: 2rem;
+    }
+    .skills{
+        justify-content: space-around;
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    .soft-skills,.hard-skills{
+        padding: 1rem;
+    }
+    .bg-mention{
+        margin-bottom: 0.2rem;
+    }
+}

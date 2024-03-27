@@ -1,0 +1,305 @@
+body{
+    background-image: url(../images/pattern-code.jpg);
+    background-position-y: 2rem;
+}
+.journey-container{
+    background-color:rgba(0,0,0,0.2);
+    border: solid 7px rgba(0,0,0,0.01);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-left-corner, .bottom-right-corner{
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border-radius: 0.3rem;
+    z-index: -1;
+    
+}
+.bottom-right-corner{
+    border-right: 5px black solid;
+    border-bottom: 5px black solid;
+    transform: translate(13.1rem, -2.9rem);
+}
+.top-left-corner{
+    border-top: 5px black solid;
+    border-left: 5px black solid;
+    transform: translate(-0.3rem, 6rem);
+}
+.box{
+    width: 14rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0;
+}
+strong{
+    background-color: white;
+    width: 60%;
+    padding-left: 0.5rem;
+    opacity: 0.9;
+}
+.coded-title{
+    margin-left: 7rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    transform: translate(0,-0.1rem);
+    
+}
+.title{
+    background-color: transparent;
+    margin-top:3.3rem;
+    display: flex;
+    flex-direction: column;
+}
+span{
+    background-color: white;
+    margin: 0;
+    opacity: 0.9;
+}
+.grid-container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 10px 15px 10px 
+    
+}
+.grid-texts{
+    border-radius: 6px;
+    border: 1px solid rgb(17, 16, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-title{
+    border-bottom: 1px solid rgb(17, 16, 16);;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.grid-story{
+    font-size: 1.6rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+img{border-radius: 4px;}
+.electrician{
+    width: 25rem;
+    height: 45rem;
+}
+.images-py img{
+    width: 30rem;
+    height: 20rem;
+}
+.reverse .grid-story{
+    font-size: 1.9rem;
+}
+
+.images-py{
+    display: flex;
+    flex-direction: column;
+}
+.html-css{
+    border-radius: 4px;
+    width:34rem;
+    height: 37rem;
+    background-image: url(../images/html-css.jpg);
+    background-size: 35rem;
+    background-position-x: -1rem;
+}
+.third-grid{
+    margin-bottom: 1.7rem;
+}
+@media only screen and (max-width:600px){
+
+    .journey-container{
+        background-color: transparent;
+    }
+    header:hover{
+        .journey-container{
+            background-color:rgba(0,0,0,0.2);
+            border: none;
+            border-radius: 50%;
+        }
+    }
+    .top-left-corner{
+        transform: translate(-0.75rem,6rem);
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .grid-title{
+        font-size: 1rem;
+    }
+    .grid-texts{
+        width: 16rem;
+    }
+    .grid-story{
+        font-size: 0.9rem;
+        margin: 0.5rem;
+        width: 11rem;
+    }
+    .title{
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    strong{
+        margin-right: 7rem;
+    }
+    span{
+        margin-left: 0.5rem;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .reverse .grid-story{
+        margin: 2.5rem;
+        font-size: 1rem;
+    }
+    .electrician{
+        width: 16rem;
+        height: 30rem;
+    }
+    .images-py{
+        margin: 0;
+    }
+    .images-py img{
+        width: 16rem;
+        height: 12rem;
+    }
+    .third-grid  .grid-texts{
+        width: 16rem;
+    }
+    .html-css{
+        width: 16rem;
+    }
+}
+@media only screen and (min-width:601px) and (max-width: 800px){
+    .journey-container{
+        background-color: transparent;
+    }
+    header:hover{
+        .journey-container{
+            background-color:rgba(0,0,0,0.2);
+            border: none;
+            border-radius: 50%;
+        }
+    }
+    .journey-container{
+        background-color: transparent;
+    }
+    header:hover{
+        .journey-container{
+            background-color:rgba(0,0,0,0.2);
+            border: none;
+            border-radius: 50%;
+        }
+    }
+    .title{
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-left-corner{
+        transform: translate(-0.18rem, 6rem);
+    }
+    .bottom-right-corner{
+        transform: translate(18.7rem, -3.1rem);
+    }
+    strong{
+        margin-right: 9rem;
+    }
+    .box{
+        width: 89%;
+        margin-right: 3rem;
+        transform: translate(0,-0.1rem);
+    }
+    .coded-title{
+        transform: translate(0,-0.3rem);
+    }
+    span{
+        margin-left: 0.5rem;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid-title{
+        font-size: 1.7rem;
+    }
+    .grid-story{
+        font-size: 1.3rem;
+        width: 15rem;
+    }
+    .grid-texts {
+        width: 25rem;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .electrician{
+    width: 25rem;
+    height: 40rem;
+    }
+    .images-py img{
+        width: 25rem;
+        margin: 0;
+
+    }
+    .images-py{
+        margin: 0;
+        width: 25rem;
+    }
+    .html-css{
+        width: 25rem;
+        margin: 0;
+    }
+    .journey-container{
+        border: none;
+    }
+}
+@media only screen and (min-width:801px) and (max-width:1200px){
+    .grid-container{
+        column-gap: 0;
+    }
+    .grid-container img, .html-css{
+        width: 24rem;
+    }
+    .grid-title{
+        font-size: 2rem;
+    }
+    .grid-story{
+        margin-bottom: 1rem;
+    }
+    .electrician{
+        height: 41rem;
+    }
+    .images-py{
+        align-items: center;
+        justify-content: center;
+    }
+    .images-py img{
+        height: 20rem;
+    }
+    .journey-container{
+        border: solid 7px rgba(0,0,0,0.01);
+    }
+}

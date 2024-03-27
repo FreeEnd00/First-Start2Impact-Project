@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/contact-form.css">
+    <link rel="icon" href="../assets/icons/icon-site.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Form">
+    <meta property="og:description" content="This is my webpage for you to contact me">
+    <meta name="description" content="This is my webpage for you to contact me">
+    <meta name="keywords" content="form,Email,portfolio,Thomas,Ernesto,Ginder">
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <img class="hamburger" src="../assets/icons/hamburger-menu.svg" alt="hamburger-menu" title="hamburger-menu-icon">        
+            <div class="home-container">
+                <a href="../">
+                    <img src="../assets/icons/home.svg" alt="home" title="home-icon">
+                </a>
+            </div>
+            <p class="journey"><a href="../My_Journey/">My Journey</a></p>
+            <div class="about-me-container">
+                <p class="bio"> <a href="../About_me/">About me</a></p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/thomas.ginderjuve" target="_blank">
+                    <img src="../assets/images/facebook-logo.webp" alt="facebook" class="facebook" title="facebook-logo">
+                </a>
+                <a href="https://www.instagram.com/thommy_ghinda/" target="_blank">
+                    <img src="../assets/images/instagram-logo.webp" alt="istagram" class="insta" title="instagram-logo">
+                </a>
+            </div>
+            <p class="github"><a href="https://github.com/FreeEnd00" target="_blank">My GitHub</a></p>
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Contact Me!</h1>
+        </div>
+        <div class="form-container">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="3f37e47b-4de8-40a5-89a6-174d0c4d1606">
+                <div class="name">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name:" required>
+                </div>
+                <div class="email">
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email:" required>
+                </div>
+                <div class="message">
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" id="message"  rows="3" cols="22" placeholder="Enter Your Message:" required></textarea>
+                </div>
+                <div class="h-captcha" data-captcha="true"></div>
+                <input type="submit" name="send-button" class="send-button" value="SEND">
+            </form>
+            <div class="img-container">
+                <img src="../assets/images/email-form.png" alt="email-image" class="email-image" title="email image">
+            </div>
+        </div>
+        <div class="mention">
+            <p class="bg-mention">
+            <a href="https://www.freepik.com/free-vector/contact-us-icons-sketch_4611203.htm#query=icons%20pattern&position=19&from_view=keyword&track=ais&uuid=5835db34-4f6a-4418-bd23-ba66284955de">Background Image by macrovector_official</a> on Freepik
+            </p>
+        </div>
+    </main>
+    <footer>
+        <button class="back-home"><a href="../">Go Back Home!</a></button>
+    </footer>
+</body>
+</html>

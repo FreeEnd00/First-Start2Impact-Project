@@ -1,0 +1,241 @@
+body{
+    background-size: 10rem;
+    background-image: url(../images/about-me-bg.jpg);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header:hover{
+    .about-me-container{
+        background-color: rgba(0,0,0,0.2);
+        border-radius: 50%;
+    }
+}
+.title-container{
+    justify-content: center;
+    display: flex;
+}
+h1, .bio-text, .title-like, .bg-mention{
+    border: 1px gray solid;
+    box-shadow: 5px 10px 15px;
+}
+h1{
+    font-size: 0.7rem;
+    background-color: white;
+    padding: 0.1rem;
+    border-radius: 4px;
+    margin-top: 3rem;
+}
+.biography{
+    display: flex;
+    margin: 0.1rem 0 0 0;
+    font-size: 0.71rem; font-family: "EB Garamond", serif;
+}
+.bio-text-container{
+    display: flex;
+    align-items: center;
+}
+.bio-text{
+    font-size: 0.7rem;
+    background-color: white;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+
+}
+.my-photo{
+    width: 9rem;
+    border-radius: 15px;
+    margin-right: 1rem;
+    margin-left: 0.2rem;
+    box-shadow: 5px 10px 15px ;
+}
+.bg-mention{
+    font-size: 0.4rem;
+    margin: 0.5rem;
+    background-color: white;
+    border-radius: 4px;
+    display: inline;
+    padding: 0.2rem;
+    cursor: pointer;
+
+}
+.title-like{
+    background-color: white;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 0.1rem;
+    border-radius: 4px;
+    margin-bottom: 0.1rem;
+}
+.title-like-container{
+    display: flex;
+    justify-content: center;
+}
+.like-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+}
+ul{
+    list-style-type: none;
+    background-color: rgb(53, 52, 52);
+    border-radius: 10px;
+    padding: 0;
+}
+li{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 0.3rem;
+}
+ul img{
+    margin-right: 0.5rem;
+    width: 2rem;
+}
+.gaming{
+  color: rgb(216, 8, 8);  
+  font-family: "Gaming",serif;
+  margin-top: 1.6rem;
+}
+.board{
+    color: rgb(214, 73, 31);
+    font-family: "BoardGames",serif;
+}
+.music{
+    color: rgb(32, 177, 177);
+    font-family: "Music",serif;
+    font-weight: 400;
+}
+.chun{
+    color: rgb(148, 81, 36);
+    font-family: "Wing-Chun",serif;
+}
+.eat{
+    color: rgb(218, 218, 51);
+    font-family: "Eating",serif;
+}
+.dogs{
+    color: rgb(231, 132, 93);
+    font-family: "Dogs",serif;
+    font-size: 2.4rem;
+}
+.climate{
+    color: rgb(36, 167, 36);
+    font-family: "Climate-Crisis",serif;
+    font-size: 1.5rem;
+}
+.astronomy{
+    color: rgb(43, 5, 94);
+    font-family: "Space",serif;
+}
+.mentions{
+    position: absolute;
+    left: 0; bottom: 0;
+    margin: 0;
+    z-index: 1001;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: "Chakra Petch";
+    cursor: pointer;
+    background-color: transparent;
+}
+button a{
+    color: black;
+    transition: color 0.15s;
+}
+button a:hover{
+    color: gray;
+}
+
+
+@media only screen and (min-width:801px){
+    header:hover{
+        .about-me-container{
+            border-radius: 0;
+        }
+    }
+    .about-me-container{
+        background-color: rgba(0,0,0,0.2);
+        border: solid 7px rgba(0,0,0,0.01);
+
+    }
+}    
+@media only screen and (min-width:600px) and (max-width:1200px){
+    h1{
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+    .my-photo{
+        width: 12rem;
+    }
+    .bio-text{
+        font-size: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .title-like{
+        font-size: 1.5rem;
+    }
+    ul img{
+        width: 2.6rem;
+    }
+    li{
+        font-size: 2rem;
+    }
+    .dogs{
+        font-size: 3rem;
+    }
+    .climate{
+        font-size: 2.2rem;
+    }
+    .mentions{
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width:1201px){
+    h1{
+        font-size: 1.5rem;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .title-like{
+        font-size: 2rem;
+    }
+    .biography{
+        margin-top: 2.5rem;
+        margin-bottom: 10rem;
+    }
+    .bio-text{
+        font-size: 1.4rem;
+        margin-left: 15rem;
+        margin-right: 10rem;
+    }
+    .my-photo{
+        width: 25rem;
+        margin-left: 5rem;
+    }
+    li{
+        font-size: 3rem;
+    }
+    .dogs{
+        font-size: 4rem;
+    }
+    .climate{
+        font-size: 2.8rem;
+    }
+    ul img{
+        width: 4rem;
+    }
+    .mentions{
+        font-size: 1rem;
+    }
+}
