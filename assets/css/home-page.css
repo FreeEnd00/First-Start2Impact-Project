@@ -84,6 +84,7 @@ header:hover{
 }
 .other-pages{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -106,16 +107,13 @@ h3{
     margin: 0;
 }
 .journey-m, .about-me-m, .journey-d,.about-me-d{
-    width: 5rem;
+    width: 10rem;
     border: 5px black solid;
     box-shadow: 5px 5px 10px black;
     border-radius: 10%;
 }
 .mirror-journey{
-    transform: translate(-2rem,0.1rem);
-}
-.mirror-about-me{
-    transform:translate(2rem,1rem);
+    margin-bottom: 1rem;
 }
 .mirror-journey h3{
     display: flex;
@@ -129,12 +127,15 @@ h3{
 }
 .skills{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: rgb(255, 255, 254);
     font-size: 0.5rem;
     font-weight: 700;
     font-family: "Chakra Petch";
-    margin: 1rem 1rem 4rem 0.5rem;
+    margin: 1rem 1rem 4rem 1rem;
+}
+.soft-skills{
+    margin-right: 1rem;
 }
 .soft-skills, .hard-skills{
     background-color: rgb(41, 39, 39);
@@ -171,22 +172,17 @@ h3{
     .home-container{
         background-color: rgba(0,0,0,0.2);
     }
+    .other-pages{
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
     .journey-m,.about-me-m{
         display: none;
-    }
-    .mirror-journey{
-        transform:translate(-3.5rem,1rem);
-    }
-    .mirror-about-me{
-        transform: translate(3.5rem,1rem);
     }
     .journey-d,.about-me-d{
         display: initial;
         width: 18rem;
         height: 20rem;
-    }
-    .other-pages{
-        margin-bottom: 2rem;
     }
     h3{
         font-size: 1.6rem;
@@ -225,6 +221,10 @@ h3{
     .kinder{
         font-size: 3rem;
         margin-top: 0;
+    }
+    .other-pages{
+        flex-direction: row;
+        justify-content: space-around;
     }
     h3{
         font-size: 0.8rem;
@@ -276,6 +276,9 @@ h3{
     }
     .lastname-container{
         margin-left: 25rem;
+    }
+    .other-pages{
+        flex-direction: row;
     }
     .journey-d,.about-me-d{
         display: initial;
