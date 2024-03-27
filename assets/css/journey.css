@@ -24,13 +24,11 @@ main{
     border-right: 5px black solid;
     border-bottom: 5px black solid;
     transform: translate(13.1rem, -2.9rem);
-    box-shadow: 10px 10px 10px black;
 }
 .top-left-corner{
     border-top: 5px black solid;
     border-left: 5px black solid;
     transform: translate(-0.3rem, 6rem);
-    box-shadow: -10px -10px 10px ;
 }
 .box{
     width: 14rem;
